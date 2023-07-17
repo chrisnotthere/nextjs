@@ -8,6 +8,7 @@ import { Container, SSRProvider } from "./components/bootstrap";
 
 // fonts directly from google
 import { Inter } from "next/font/google";
+import NavBar from "./NavBar";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -27,6 +28,7 @@ export default function RootLayout({
     <html lang="en">
       <body className={inter.className}>
         <SSRProvider>
+          <NavBar />
           <main>
             <Container className="py-4">
               {children}
