@@ -1,7 +1,7 @@
 import "bootstrap/dist/css/bootstrap.min.css";
 import "./globals.css";
 import type { Metadata } from "next";
-import { Container, SSRProvider } from "./components/bootstrap";
+import { Container, SSRProvider } from "../components/bootstrap";
 
 // the order of these imports is important
 // we want to import bootstrap first so that we can override it with our own styles
